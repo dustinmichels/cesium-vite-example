@@ -37,10 +37,10 @@ Create a vite config and use the rollup plugin to make Cesium's static assets av
 `vite.config.js`
 
 ```js
-import { viteStaticCopy } from "vite-plugin-static-copy";
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 
-const cesiumSrcDir = "node_modules/cesium/Build/Cesium";
-const cesiumDestDir = "static/Cesium";
+const cesiumSrcDir = 'node_modules/cesium/Build/Cesium'
+const cesiumDestDir = 'static/Cesium'
 
 export default {
   plugins: [
@@ -65,7 +65,7 @@ export default {
       ],
     }),
   ],
-};
+}
 ```
 
 ### 4. Add Cesium to index.html
@@ -83,7 +83,7 @@ export default {
   </body>
   <script>
     // The URL on your server where CesiumJS's static files are hosted.
-    window.CESIUM_BASE_URL = "static/Cesium";
+    window.CESIUM_BASE_URL = 'static/Cesium'
   </script>
   <script type="module" src="/src/main.js"></script>
 </html>

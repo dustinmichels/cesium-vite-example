@@ -1,7 +1,7 @@
-import { viteStaticCopy } from "vite-plugin-static-copy";
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 
-const cesiumSrcDir = "node_modules/cesium/Build/Cesium";
-const cesiumDestDir = "static/Cesium";
+const cesiumSrcDir = 'node_modules/cesium/Build/Cesium'
+const cesiumDestDir = 'static/Cesium'
 
 export default {
   plugins: [
@@ -26,4 +26,4 @@ export default {
       ],
     }),
   ],
-};
+}
